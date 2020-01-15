@@ -3,14 +3,14 @@ using System.Threading;
 
 namespace Elastic.Apm.Helpers
 {
-	internal struct DbgInstanceNameGenerator
+	public struct DbgInstanceNameGenerator
 	{
 		private long _lastId;
 
 		// ReSharper disable once UnusedMember.Global
-		internal DbgInstanceNameGenerator(long startId = 1) => _lastId = startId - 1;
+		public DbgInstanceNameGenerator(long startId = 1) => _lastId = startId - 1;
 
-		internal string Generate(string prefix = null)
+		public string Generate(string prefix = null)
 		{
 			var result = new StringBuilder();
 

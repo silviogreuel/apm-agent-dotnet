@@ -5,7 +5,7 @@ using Elastic.Apm.Logging;
 
 namespace Elastic.Apm.Config
 {
-	internal abstract class AbstractConfigurationWithEnvFallbackReader : AbstractConfigurationReader, IConfigurationReader
+	public abstract class AbstractConfigurationWithEnvFallbackReader : AbstractConfigurationReader, IConfigurationReader
 	{
 		private readonly string _defaultEnvironmentName;
 
@@ -13,7 +13,7 @@ namespace Elastic.Apm.Config
 
 		private readonly Lazy<int> _stackTraceLimit;
 
-		internal AbstractConfigurationWithEnvFallbackReader(IApmLogger logger, string defaultEnvironmentName, string dbgDerivedClassName)
+		public AbstractConfigurationWithEnvFallbackReader(IApmLogger logger, string defaultEnvironmentName, string dbgDerivedClassName)
 			: base(logger, dbgDerivedClassName)
 		{
 			_defaultEnvironmentName = defaultEnvironmentName;

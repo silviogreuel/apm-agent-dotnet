@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net461</TargetFramework>
-    <AssemblyName>Elastic.Apm.AspNetFullFramework</AssemblyName>
-    <RootNamespace>Elastic.Apm.AspNetFullFramework</RootNamespace>
-    <PackageId>Elastic.Apm.AspNetFullFramework</PackageId>
+    <AssemblyName>Movidesk.Elastic.Apm.AspNetFullFramework</AssemblyName>
+    <RootNamespace>Movidesk.Elastic.Apm.AspNetFullFramework</RootNamespace>
+    <PackageId>Movidesk.Elastic.Apm.AspNetFullFramework</PackageId>
     <Description>Elastic APM for ASP.NET Full Framework. This package contains auto instrumentation for ASP.NET Full Framework. See: https://github.com/elastic/apm-agent-dotnet/tree/master/docs</Description>
     <PackageTags>apm, monitoring, elastic, elasticapm, analytics, aspnet</PackageTags>
   </PropertyGroup>
